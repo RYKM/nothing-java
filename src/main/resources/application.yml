@@ -1,0 +1,17 @@
+#端口号
+server:
+  port: 9999
+#连接数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/nothing_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*/*.xml    #配置mybatis扫描mapper文件xml的路径
+  configuration:
+    map-underscore-to-camel-case: true    #配置驼峰命名规则自动转换
+
+
